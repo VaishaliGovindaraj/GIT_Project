@@ -1,0 +1,43 @@
+.container {
+    max-width: 70%;
+    margin: 8rem auto;
+    background-color: var(--grey-light-1);
+    box-shadow: var(--shadow-dark);
+
+    /* TEMP HEIGH, we make this auto adjusted with content later */
+ 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header {
+    background-color: var(--grey-dark-1);
+    padding: 3rem;
+    text-align: center;
+
+    h1 {
+        color: #fff;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    display: flex;
+    flex: 0 0 18%;
+    background-color: var(--grey-dark-1);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-content {
+    flex-grow: 1;
+    background: var(--grey-light-1);
+}
+.filler {
+    min-height: 80rem;
+}
