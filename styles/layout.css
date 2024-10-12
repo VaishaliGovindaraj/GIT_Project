@@ -39,5 +39,5 @@
     background: var(--grey-light-1);
 }
 .filler {
-    min-height: 80rem;
+    height: 100rem;
 }
