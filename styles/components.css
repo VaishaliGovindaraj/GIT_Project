@@ -2,8 +2,6 @@
     font-size: 1.4rem;
     list-style: none;
     margin-top: 3.5rem;
-
-
 }
 
 .side-nav__item {
@@ -12,8 +10,6 @@
     &:not(:last-child) {
         margin-bottom: .5rem;
     }
-
-
 }
 
 .side-nav__item::before {
@@ -25,7 +21,6 @@
     width: 3px;
     background-color: var(--color-primary);
     transform: scaleY(0);
-
 }
 
 .side-nav__item:hover::before,

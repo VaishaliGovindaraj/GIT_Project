@@ -5,7 +5,7 @@
     box-shadow: var(--shadow-dark);
 
     /* TEMP HEIGH, we make this auto adjusted with content later */
- 
+
     display: flex;
     flex-direction: column;
 
@@ -38,6 +38,7 @@
     flex-grow: 1;
     background: var(--grey-light-1);
 }
+
 .filler {
     height: 100rem;
 }
