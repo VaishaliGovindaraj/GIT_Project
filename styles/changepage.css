@@ -48,12 +48,13 @@ p {
 }
 
 .command {
-    border: 2px solid black;
-    border-radius: 10px;
+   /* border: 2px solid black;
+    border-radius: 10px;*/
     margin: 8px;
     width: 200px;
     box-shadow: 2px 2px 2px;;
     background-color: lightgray;
+    overflow: hidden;
 }
 
 .command h5 {
@@ -61,4 +62,38 @@ p {
     font-weight: 900;
     font-size: 1.6rem;
     padding: 8px;
+}
+
+.command_explanation {
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    bottom: 10px;
+    background: rgb(27, 27, 27,.5);
+    transition: .5s;
+}
+
+.command_explanation p{
+    visibility: hidden;
+    color: beige;
+    opacity: 0;
+}
+
+.command:hover {
+    cursor: pointer;
+}
+
+.command:hover .command_explanation {
+    height: 220px;
+    bottom: 10px;
+    background-color: black;
+}
+
+.command:hover .command_explanation p{
+    visibility: visible;
+    opacity: 1;
+}
+
+.command:hover h5 {
+    transform: scale(1.1) rotate(-3deg);
 }
