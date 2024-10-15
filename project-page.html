@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/project-page.css">
 </head>
 
 <body>
     <div class="container">
         <header class="header">
             <h1 class="header__page-title">
-                Git Project Site
+                PROJECT COMMANDS
             </h1>
         </header>
         <div class="content">
@@ -29,17 +30,16 @@
                             <span>HOME</span>
                         </a>
                     </li>
-                    <li class="side-nav__item">
-                        <a href="#" class="side-nav__link">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link side-nav__link--active">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
                             </svg>
                             <span>PROJECT</span>
                         </a>
                     </li>
-                    <li class="side-nav__item side-nav__item--active">
-                        <a href="#" class="side-nav__link
-                            side-nav__link--active">
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-key"></use>
                             </svg>
@@ -67,13 +67,321 @@
                     &copy; 2024 by Git-Project
                 </div>
             </div>
-            <div class="main-content">
-                <!--Here we will put our content, erase the filler class and div-->
-                <div class="filler">
-                  
-                </div>
-                <!--Ends here-->
+            <section class="main-content">
+                    <div class="grid-container">
+                        <div class="grid-container__item">
+                            <h3 class="sub-header">Details the relevant git commands relevant to creating a project locally.</h3>
+                            <table>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Command</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td>Initialize Repository</td>
+                                    <td>git init</td>
+                                    <td>Initializes a new Git repository in the current directory.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git clone<repo-URL></td>
+                                    <td>Clones an existing remote repository to your local machine.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Configure User (one-time setup)</td>
+                                    <td>git config --global user.name "Your Name"</td>
+                                    <td>Sets the username for commits.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git config --global user.email "your@email.com"</td>
+                                    <td>Sets the email for commits.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Add Files to Repository</td>
+                                    <td>git add <filename></td>
+                                    <td>Adds a specific file to the staging area.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git add .</td>
+                                    <td>Adds all changes in the current directory to the staging area.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Commit Changes</td>
+                                    <td>git commit -m "Your commit message"</td>
+                                    <td>Records a snapshot of the staged changes with a message.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Upload (Push) Changes</td>
+                                    <td>git remote add origin <repo-URL></td>
+                                    <td>Links your local repository to a remote repository (e.g., GitHub).</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git push -u origin <branch-name></td>
+                                    <td>Pushes local changes to the remote branch and sets the upstream.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Check Status and Logs</td>
+                                    <td>git status</td>
+                                    <td>Shows the current status of files (staged, modified, etc.).</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git log</td>
+                                    <td>Displays the commit history.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git diff</td>
+                                    <td>Shows the differences between changes in files.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Create and Switch Branches</td>
+                                    <td>git branch <branch-name></td>
+                                    <td>Creates a new branch.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git checkout <branch-name></td>
+                                    <td>Switches to the specified branch.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git checkout -b <branch-name></td>
+                                    <td>Creates and switches to a new branch.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Merge Branch with Main</td>
+                                    <td>git checkout main</td>
+                                    <td>Switches to the main branch.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git pull origin main</td>
+                                    <td>Updates the local main branch with the latest remote changes.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git merge <branch-name></td>
+                                    <td>Merges the specified branch into the main branch.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>Merges the specified branch into the main branch.</td>
+                                    <td>Resolves any merge conflicts by editing conflicting files.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git add <filename></td>
+                                    <td>Adds resolved files to the staging area.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>git commit -m "Resolved merge conflicts"</td>
+                                    <td>Commits the merge after resolving conflicts.</td>
+                                    <td></td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git push origin main</td>
+                                    <td>Pushes the merged changes to the remote main branch.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Delete Merged Branch</td>
+                                    <td>git branch -d <branch-name></td>
+                                    <td>Deletes the local branch after merging.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git push origin --delete <branch-name></td>
+                                    <td>Deletes the remote branch (optional).</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Additional Useful Commands</td>
+                                    <td>git stash</td>
+                                    <td>Temporarily stores uncommitted changes.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git stash apply</td>
+                                    <td>Reapplies stashed changes.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git fetch</td>
+                                    <td>Downloads new changes from the remote but doesn’t merge them automatically.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git pull</td>
+                                    <td>Fetches and merges changes from the remote branch.</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git rebase <branch-name></branch-name></td>
+                                    <td>Reapplies commits on top of another branch (alternative to merging).</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git reset --hard <commit-hash></td>
+                                    <td>Resets the repository to a specific commit (removes changes).</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>git tag <tag-name></td>
+                                    <td>Creates a tag for a specific commit (useful for releases).</td>
+                                </tr>
+                            </table>
+                        </div>
+                            
+                        <div class="grid-container__item">
+                            <h3 class="sub-header">Details the git commands to link the local and remote repos</h3>
+                        <p>Step 1: Create a new directory,
+                            "mkdir my-first-git-project". This command creates a new directory named my-first-git-project.</p>
+                            <p>Step 2: Navigate to the project directory
+                            "cd my-git-project". Changes into the newly created directory.</p>
+                            <p>Step 3: Initialize a Git repository,
+                            "git init". This command initializes a new Git repository in the current directory.</p>
+                            <p>Step 4: Create a new file, "touch (on mac)", "Echo (on windows)"" then file name; document.html. This creates a new file i.e document.html and add a simple message to it.</p>
+                            <p>Step 5: Check the status of your repository
+                            "git status". This command shows the current status of your repository. You should see document.html listed as an untracked file.</p>
+                            <p>Step 6: Add the file to the staging area
+                            This command stages the file, preparing it for a commit, forexample; "git add document.html" or "git add ." to add all the files. The staging area in Git is like a prepping table where you organize and select specific changes (ingredients) before committing them to the project (cooking the final dish).</p>
+                            <p>Step 7: Make a local commit
+                            For example; git commit -m "Initial commit"
+                            This command creates a commit with a message describing the changes. It's like taking a snapshot of your project at this point.</p>
+
+                            <p>Step 8: Check the commit history
+                            "git log".
+                            <p>Connect to a Remote Repository:
+                            Connecting your local repository to a remote repository is a crucial step, especially if you want to collaborate with others or backup your work on a remote server.</p>
+                            <p>1. Add a Remote Connection:
+                            To link your local project to an online repository, use; "git remote add origin repository-url" where "origin" is a common name, and replace repository-url with your online repository's URL.
+                            create repo in git hub.</p>
+                            <p>2. Push Changes to the Remote Repository:
+                            Once you've added the remote connection, you can push your local changes to the remote repository. The -u option sets up a tracking relationship, linking your local branch with the remote branch.
+                            "git push -u origin master". This command is assuming you're pushing changes from the master branch. 
+                            Example:
+                            git push -u origin main
+                            Now, your local changes are sent to the remote repository, and the two repositories are linked. You can subsequently use git pull to fetch changes from the remote repository or continue pushing changes with git push.
+                            </p>
+                    </div>
+                        <div class="grid-container__item">
+                            <h3 class="sub-header">why remote repositories are necessary</h3>
+                            <p>Remote repositories play a crucial role in the world of version control. In simple terms, a remote repository refers to the shared storage where developers can collaborate, store, and access their codebase. It serves as a central hub for a project, allowing team members to work together seamlessly.</p>
+
+                            <P>When developers work on a project, they create a local repository on their own machines to track changes and history. However, this local repository has its limitations, as it can only be accessed by the developer who created it. This is where a remote repository comes into play.</P>
+                                
+                            <p>A remote repository, as the name suggests, is a repository located on a centralized server or cloud-based platform. It serves as a common repository where multiple developers can store their changes and share their work with others. By committing their changes to the remote repository, developers make their code available to the entire team.</p>
+                                
+                            <p>The benefits of remote repositories are numerous. They facilitate seamless collaboration between team members, regardless of their physical location. Developers can push their changes to the remote repository, allowing others to pull those changes and work on them. This fosters an efficient and streamlined workflow within a development team.</p>
+                                
+                            <p>Additionally, remote repositories provide a secure and reliable backup of the project's codebase. In the event of a local machine failure or data loss, developers can simply clone the remote repository to retrieve all the files and commit history. This ensures that no work is lost and allows teams to pick up where they left off without any setbacks.</p>
+                                
+                            <p>Popular remote repository hosting services include GitHub, GitLab, and Bitbucket. These platforms offer additional features like issue tracking, pull requests, and code review, enhancing the collaboration and project management aspects.</p>
+                                
+                            <h3 class="sub-header">The Importance of Assessing Remote Repositories Skills</h3>
+                                <p>Assessing a candidate's knowledge and experience with remote repositories is essential in today's collaborative work environment. Here's why it's important to evaluate this skill when hiring:
+                                
+                                Efficient Collaboration: With remote work becoming more common, the ability to effectively collaborate with team members is crucial. Assessing a candidate's proficiency in remote repositories ensures that they can navigate and contribute to shared codebases, allowing for seamless collaboration with remote colleagues.</p>
+                                
+                                <p>Version Control Competence: Remote repositories are integral to effective version control, allowing developers to track changes, manage conflicts, and maintain a centralized codebase. By assessing a candidate's understanding of remote repositories, you can ensure they have the skills needed to effectively manage versions and contribute to the overall stability and quality of your projects.</p>
+                                
+                                <p>Team Productivity: Assessing a candidate's knowledge of remote repositories also contributes to maximizing team productivity. By understanding how to properly interact with remote repositories, developers can efficiently share their code, review each other's work, and address issues or merge changes seamlessly. This enables teams to work more cohesively and produce higher quality results.</p>
+                                
+                                <p>Code Management and Backup: Remote repositories provide a secure and reliable way to store and manage code. By assessing a candidate's familiarity with remote repositories, you can ensure they understand the importance of proper code management practices, commit history, and backups. This helps protect valuable code assets and ensures that work can be recovered in case of any mishaps or data loss.</p>
+                                
+                                <p>Adaptability and Continuity: In a rapidly changing technological landscape, companies need employees who can adapt to new tools and workflows. Assessing a candidate's proficiency in remote repositories demonstrates their adaptability and willingness to embrace modern collaboration practices. It also ensures that your team can maintain continuity, even when transitioning to remote or distributed work setups.</p>
+                                
+                                <p>By assessing a candidate's knowledge and understanding of remote repositories, you can make informed hiring decisions, build a stronger team, and drive successful collaborative projects within your organization.</p>
+                        </div>
+                        <div class="grid-container__item">
+                            <h3 class="sub-header">Steps involved in creating a project on github (create an organization project or a user project.)</h3>
+                                <p>Creating an organization project
+                                In the upper-right corner of GitHub, select your profile photo, then click Your organizations.
+                                Click the name of your organization.
+                                Under your organization name, click  Projects.
+                                Click New project.
+                                Select which type of project or template you want to use.
+                                To create a blank project, under "Start from scratch", click Table, Roadmap, or Board.
+                                To create a project from a template, click the template you want to use. You can select from the built-in templates curated by GitHub, the templates created by your organization, and the recommended templates that have been chosen by your organization.
+                                Optionally, if you selected a template, review the fields, views, workflows, and insights that will be created.
+                                
+                                In the text box under "Project name", type a name for your new project.
+                                
+                                Click Create project.</p>
+                                
+                                <p>Creating a user project
+                                In the top right corner of GitHub, click your profile photo, then click Your profile.
+                                On your profile, click  Projects.
+            
+                                Click New project.
+                                
+                                Select which type of project or template you want to use.
+                                
+                                To create a blank project, under "Start from scratch", click Table, Roadmap, or Board.
+                                To create a project from a template, click the built-in template that you want to use.
+                                Optionally, if you selected a template, review the fields, views, workflows, and insights that will be created.
+                                
+                                In the text box under "Project name", type a name for your new project.
+                                
+                                Click Create project.</p>
+                                
+                                <p>Setting your project description and README
+                                You can set your project's description and README to share the purpose of your project, provide instructions on how to use the project, and include any relevant links.
+                                
+                                Navigate to your project.
+                                
+                                In the top-right, click  to open the menu.
+                        
+                                In the menu, click  Settings to access the project settings.
+                                
+                                To add a short description to your project, under "Add a description", type your description in the text box and click Save.
+                                
+                                To update your project's README, under "README", type your content in the text box.
+                                
+                                You can format your README using Markdown. For more information, see "Basic writing and formatting syntax."
+                                To toggle between the text box and a preview of your changes, click  or .
+                                To save changes to your README, click Save.
+                                
+                                You can view and make quick changes to your project description and README by navigating to your project and clicking  in the top right.
+                                </p>
+                        </div>
+                        <div class="grid-container__item">contribution of people to projects</div>
+               
             </div>
+            </section>
         </div>
     </div>
 </body>
