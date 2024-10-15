@@ -78,3 +78,27 @@
     padding: 2.5rem;
     color: var(--grey-light-4);
 }
+
+.about-us__intro {
+    padding: 4rem;
+    background-color: beige;
+    border-bottom: 1px var(--grey-dark-1) solid;
+}
+
+.about-us__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr fr1 1fr;
+    gap: 2rem;
+    background-color: beige;
+    padding-top: 2rem;
+}
+
+.grid__item {
+    width: 100%;
+
+    &:last-child {
+
+        margin-bottom: 2rem;
+    }
+}
