@@ -1,3 +1,15 @@
+* .change-page{
+    color: black;
+}
+
+.change-page {
+    margin: 0;
+    padding: 8px;
+    min-height: 100vh;
+    border: 10px solid var(--color-primary-dark);
+}
+
+
 .change-page_title {
     text-align: center;
     color: black;
@@ -5,4 +17,43 @@
     padding: 8px;
     text-transform: uppercase;
     text-decoration: underline;
+}
+
+.change-page_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+p {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.steps_content h4{
+    font-size: 1.8rem;
+    font-style: italic;
+    width: fit-content;
+}
+
+.git_command {
+    margin: 16px;
+    padding: 16px;
+    font-size: 1.4rem;
+    display: flex;
+   
+}
+
+.command {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+.command span {
+    justify-content: center;
+    font-weight: 900;
+    font-size: 1.6rem;
+    width: fit-content;
+    background-color: var(--color-primary-light);
 }
