@@ -28,6 +28,7 @@
 p {
     font-size: 1.4rem;
     color: black;
+    padding: 8px;
 }
 
 .steps_content h4{
@@ -41,19 +42,23 @@ p {
     padding: 16px;
     font-size: 1.4rem;
     display: flex;
-   
+    height: 300px;
+   justify-content: center;
+ 
 }
 
 .command {
     border: 2px solid black;
     border-radius: 10px;
     margin: 8px;
+    width: 200px;
+    box-shadow: 2px 2px 2px;;
+    background-color: lightgray;
 }
 
-.command span {
-    justify-content: center;
+.command h5 {
+    text-align: center;
     font-weight: 900;
     font-size: 1.6rem;
-    width: fit-content;
-    background-color: var(--color-primary-light);
+    padding: 8px;
 }
