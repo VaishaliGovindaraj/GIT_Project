@@ -36,6 +36,10 @@
     &:visited {
         color: var(--grey-dark-1);
     }
+
+    .side-nav__icon {
+        fill: var(--grey-dark-1);
+    }
 }
 
 .side-nav__item:active::before {
@@ -62,14 +66,19 @@
     &:hover {
         color: var(--grey-dark-1);
         transition: color 0s .4s;
+
+        .side-nav__icon {
+            fill: var(--grey-dark-1);
+            transition: fill 0s .4s;
+        }
     }
 }
 
 .side-nav__icon {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
     margin-right: 2rem;
-    fill: currentColor;
+    fill: #fff;
 }
 
 .legal {
@@ -81,24 +90,20 @@
 
 .about-us__intro {
     padding: 4rem;
-    background-color: beige;
-    border-bottom: 1px var(--grey-dark-1) solid;
+    background-image: linear-gradient(to left bottom, #f5f5dc, #ececec);
+    border-bottom: 1px var(--grey-light-4) solid;
+    font-size: 1.6rem;
 }
 
 .about-us__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr fr1 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
-    background-color: beige;
-    padding-top: 2rem;
+    padding: 2rem 0;
+    background-image: linear-gradient(to right bottom, #ececec, #f5f5dc);
 }
 
 .grid__item {
     width: 100%;
-
-    &:last-child {
-
-        margin-bottom: 2rem;
-    }
 }
