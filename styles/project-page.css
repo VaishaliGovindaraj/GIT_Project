@@ -1,0 +1,46 @@
+article {
+    background-color: var(--color-primary-dark);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.article__item {
+    background-color: beige;
+    padding: 16px;
+    gap: 10px;
+    width: 100%;
+}
+
+table {
+    padding: 16px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: aliceblue;
+  }
+
+tr:nth-child(even) {
+    
+    background-color: #96d4d433;
+  }
+  
+th:nth-child(even),td:nth-child(even) {
+    background-color: #96d4d433;
+  }
+
+.sub-header {
+    text-align: center;
+}
+
+.article__item p {
+    padding: 10px;
+    word-spacing: normal;
+}
