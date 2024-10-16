@@ -1,5 +1,6 @@
 * .change-page{
     color: black;
+    background-color: var(--color-primary-light);
 }
 
 .change-page {
@@ -48,11 +49,11 @@ p {
 }
 
 .command {
-   /* border: 2px solid black;
-    border-radius: 10px;*/
+    border-radius: 10px;
     margin: 8px;
     width: 200px;
-    box-shadow: 2px 2px 2px;;
+    box-shadow: 2px 2px 2px;
+    position: relative;
     background-color: lightgray;
     overflow: hidden;
 }
@@ -68,15 +69,16 @@ p {
     width: 200px;
     height: 10px;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     background: rgb(27, 27, 27,.5);
+    opacity: 1;
     transition: .5s;
 }
 
 .command_explanation p{
     visibility: hidden;
-    color: beige;
     opacity: 0;
+    color: beige;
 }
 
 .command:hover {
@@ -92,8 +94,51 @@ p {
 .command:hover .command_explanation p{
     visibility: visible;
     opacity: 1;
+    color: beige;
 }
 
 .command:hover h5 {
     transform: scale(1.1) rotate(-3deg);
+}
+
+@media screen and (max-width: 768px) {
+    .command {
+        border-radius: 10px;
+        margin: 8px;
+        width: 200px;
+        box-shadow: 2px 2px 2px;
+        position: relative;
+        background-color: lightgray;
+        overflow: visible;
+    }
+
+    .command_explanation {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        bottom: 2px;
+        background: black;
+        opacity: 1;
+        transition: none;
+    }
+
+    .command_explanation p{
+        visibility: visible;
+        color: beige;
+        opacity: 1;
+    }
+
+    .command:hover {
+        cursor: none;
+    }
+
+    .command:hover .command_explanation {
+        height: 150px;
+        bottom: 2px;
+        background-color: black;
+    }
+    
+    .command:hover h5 {
+        transform: none;
+    }
 }

@@ -99,90 +99,99 @@
                                         <p>It will add the changes you done on the respective file </p>
                                     </div>
                                 </div>
-                                <div class="command">
-                                    <h5> git status </h5> 
-                                    <div class="command_explanation">
-                                        <p> It will display the status of your code what you have modified.
-                                        the red line shows the deletion you have done.</p>
-                                    </div>
-                                </div> 
                             </div>
                         </div>
                         
                         <div class="steps_content">
-                            <h4>Step 2: Commit your changes</h4>
-                            <p>After you have staged your changes, you will need to commit them to your local repository.
+                            <h4>Step 2: Check for changed file</h4>
+                            <p>After you Modified and added your file check for the changes by using following commands.
                             </p>
+                            <div class="git_command">
+                                <div class="command">
+                                    <h5> git status </h5> 
+                                    <div class="command_explanation">
+                                         <p> It will display the added and modified files. Green line is the file you added,
+                                         Red line is the file you deleted .</p>
+                                     </div>
+                                </div> 
+                                <div class="command">
+                                    <h5> git restore --staged &lt;filename&gt;</h5> 
+                                    <div class="command_explanation">
+                                        <p>It removes the specified file(s) from the staging area (index) without 
+                                        changing the actual content of the working directory. .</p>
+                                    </div>
+                            </div> 
+                            <div class="command">
+                                <h5> git restore --staged . </h5> 
+                                <div class="command_explanation">
+                                    <p> It removes all the  file(s) from the staging area (index) without 
+                                        changing the actual content of the working directory.</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
 
+                        <div class="steps_content">
+                            <h4>Step 3: Commit yor changes:</h4>
+                            <p>After you added and modified the file(s) in your local repository,
+                                 you can commit your changes by using following command.
+                            </p>
                             <div class="git_command">
                                 <div class="command">
                                     <h5>git commit -m "message"</h5> 
                                     <div class="command_explanation">
-                                        <p> it will commit the changes  to your local repository
+                                        <p> It will commit the changes  to your local repository
                                          that we are staged .
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="steps_content">
-                            <h4>Step 3: Check for changes:</h4>
-                            <p>Once you have commited to your changes but before pushing it to the remote repo
-                                you can verify what changes are made and difference between the new code and the existing one.
-                            </p>
-                            <div class="git_command">
-                                <div class="command">
-                                    <h5>git log</h5>
-                                    <div class="command_explanation">
-                                        <p>Display the history of commits (all modifications made on the project)</p>
-                                    </div>
-                                </div>
-                                <div class="command">
-                                    <h5>git checkout .</h5>
-                                    <div class="command_explanation">
-                                        <p>It is used to discard all uncommitted changes in the working directory. 
-                                        It is a quick way to revert all modified files to their most recent committed state, but it does not affect untracked files.</p>
-                                    </div>
-                                </div>
-                                <div class="command">
-                                    <h5>git checkout &lt;Filename&gt;</h5>
-                                    <div class="command_explanation">
-                                        <p>It is used to restore a file in your working directory. 
-                                        It discards any changes you have made to the file in your working directory that haven't been staged.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="command">
-                                    <h5>git diff &lt;Filename&gt;</h5>
-                                    <div class="command_explanation">
-                                        <p>It show the changes between commits, the working directory, and the staging area. 
-                                        compare different versions of your code to see what has been modified, added, or removed. 
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>            
                         </div>
                         
                         <div class="steps_content">
                             <h4>Step 4: Push Your Changes to the Remote Repository:</h4>
                             <p>Once you have committed your changes to your local repository, 
-                            you will need to push the changes to the remote repository.</p>
+                                you will need to push the changes to the remote repository.</p>
+                                <div class="git_command">
+                                    <div class="command">
+                                        <h5>git push</h5>
+                                        <div class="command_explanation">
+                                            <p>It will push the commited changes that you made in local file to the remote repo.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="command">
+                                        <h5> git push --set -u origin &lt;branchname&gt;</h5>
+                                        <div class="command_explanation">
+                                            <p> If you are on your branch and when you are doing the first push you have to use this.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="steps_content">
+                            <h4>Step 5: Discarding the changes(optional)</h4>
+                            <p>If you want to discard the last commited changes from the working directory it can be done by following command.
+                            </p>
                             <div class="git_command">
                                 <div class="command">
-                                    <h5>git push</h5>
+                                    <h5>git checkout --&lt;filename&gt;</h5>
                                     <div class="command_explanation">
-                                        <p>It will push the commited changes that you made in local file to the remote repo.</p>
+                                        <p>It will discard changes in your working directory for a specific file.
+                                            This would discard any changes made to  and revert it to the version from the latest commit.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="command">
-                                    <h5> git push --set -u origin &lt;branchname&gt;</h5>
+                                    <h5>git checkout -- .</h5>
                                     <div class="command_explanation">
-                                        <p> If you are on your branch and when you are doing the first push you have to use this.
+                                        <p>This will discard all uncommitted changes across the working directory, resetting all modified files to their committed versions.
                                         </p>
                                     </div>
                                 </div>
                             </div>
+                       
                         </div>
                     </div>
                 </div>
