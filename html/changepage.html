@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT Assignment</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/changepage.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__page-title">
+                Git Project Site
+            </h1>
+        </header>
+        <div class="content">
+            <div class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="../index.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span> Home</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="./project-page.html" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span>Project</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="./changepage.html" class="side-nav__link side-nav__link--active">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Changes</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Branching</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Aboutus</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2024 by Git-Project
+                </div>
+            </div>
+            <div class="main-content">
+                <!--Here we will put our content, erase the filler class and div-->
+                <div class="change-page">
+                    <h2 class="change-page_title"> Steps involved in adding code to an existing repository</h2>
+                    <div class="change-page_content">
+                        <div class="intro_content">
+                            <p>After you start working on your code you will add and modify files in your local repository.
+                            Once you modified your files inlocal repo you have to add it to remote repo in Github. 
+                            The following are the steps involved in adding code to existing repository</p>
+                        </div>
+
+                        <div class="steps_content">
+                            <h4>Step 1: Make Changes to Your Local Repository</h4>
+                            <p>The first step in pushing new changes to an existing repository is to make changes to your local repository.
+                            This could involve adding new files, modifying existing files, or deleting files. 
+                            You can make these changes using any text editor or IDE. </p>
+                            
+                            <div class="git_command">
+                                <div class="command">
+                                    <h5> git add .</h5> 
+                                    <div class="command_explanation">
+                                        <p>If you have done changes in more than one file by using this command 
+                                        it will add the changes to the existing repo.</p>
+                                    </div>
+                                </div>
+
+                                <div class="command">
+                                    <h5> git add &lt;filename&gt; </h5> 
+                                    <div class="command_explanation">
+                                        <p>It will add the changes you done on the respective file </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="steps_content">
+                            <h4>Step 2: Check for changed file</h4>
+                            <p>After you Modified and added your file check for the changes by using following commands.
+                            </p>
+                            <div class="git_command">
+                                <div class="command">
+                                    <h5> git status </h5> 
+                                    <div class="command_explanation">
+                                         <p> It will display the added and modified files. Green line is the file you added,
+                                         Red line is the file you deleted .</p>
+                                     </div>
+                                </div> 
+                                <div class="command">
+                                    <h5> git restore --staged &lt;filename&gt;</h5> 
+                                    <div class="command_explanation">
+                                        <p>It removes the specified file(s) from the staging area (index) without 
+                                        changing the actual content of the working directory. .</p>
+                                    </div>
+                            </div> 
+                            <div class="command">
+                                <h5> git restore --staged . </h5> 
+                                <div class="command_explanation">
+                                    <p> It removes all the  file(s) from the staging area (index) without 
+                                        changing the actual content of the working directory.</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                        <div class="steps_content">
+                            <h4>Step 3: Commit yor changes:</h4>
+                            <p>After you added and modified the file(s) in your local repository,
+                                 you can commit your changes by using following command.
+                            </p>
+                            <div class="git_command">
+                                <div class="command">
+                                    <h5>git commit -m "message"</h5> 
+                                    <div class="command_explanation">
+                                        <p> It will commit the changes  to your local repository
+                                         that we are staged .
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+                        
+                        <div class="steps_content">
+                            <h4>Step 4: Push Your Changes to the Remote Repository:</h4>
+                            <p>Once you have committed your changes to your local repository, 
+                                you will need to push the changes to the remote repository.</p>
+                                <div class="git_command">
+                                    <div class="command">
+                                        <h5>git push</h5>
+                                        <div class="command_explanation">
+                                            <p>It will push the commited changes that you made in local file to the remote repo.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="command">
+                                        <h5> git push --set -u origin &lt;branchname&gt;</h5>
+                                        <div class="command_explanation">
+                                            <p> If you are on your branch and when you are doing the first push you have to use this.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="steps_content">
+                            <h4>Step 5: Discarding the changes(optional)</h4>
+                            <p>If you want to discard the last commited changes from the working directory it can be done by following command.
+                            </p>
+                            <div class="git_command">
+                                <div class="command">
+                                    <h5>git checkout --&lt;filename&gt;</h5>
+                                    <div class="command_explanation">
+                                        <p>It will discard changes in your working directory for a specific file.
+                                            This would discard any changes made to  and revert it to the version from the latest commit.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="command">
+                                    <h5>git checkout -- .</h5>
+                                    <div class="command_explanation">
+                                        <p>This will discard all uncommitted changes across the working directory, resetting all modified files to their committed versions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </div>
+                    </div>
+                </div>
+                <!--Ends here-->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
