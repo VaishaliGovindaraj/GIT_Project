@@ -68,8 +68,8 @@
                 </div>
             </div>
             <section class="main-content">
-                    <div class="grid-container">
-                        <div class="grid-container__item">
+                    <article>
+                        <div class="article__item">
                             <h3 class="sub-header">Details the relevant git commands relevant to creating a project locally.</h3>
                             <table>
                                 <tr>
@@ -263,55 +263,52 @@
                                     <td>Creates a tag for a specific commit (useful for releases).</td>
                                 </tr>
                             </table>
-                        </div>
-                            
-                        <div class="grid-container__item">
-                            <h3 class="sub-header">Details the git commands to link the local and remote repos</h3>
-                        <p>Step 1: Create a new directory,
-                            "mkdir my-first-git-project". This command creates a new directory named my-first-git-project.</p>
-                            <p>Step 2: Navigate to the project directory
-                            "cd my-git-project". Changes into the newly created directory.</p>
-                            <p>Step 3: Initialize a Git repository,
-                            "git init". This command initializes a new Git repository in the current directory.</p>
-                            <p>Step 4: Create a new file, "touch (on mac)", "Echo (on windows)"" then file name; document.html. This creates a new file i.e document.html and add a simple message to it.</p>
-                            <p>Step 5: Check the status of your repository
-                            "git status". This command shows the current status of your repository. You should see document.html listed as an untracked file.</p>
-                            <p>Step 6: Add the file to the staging area
-                            This command stages the file, preparing it for a commit, forexample; "git add document.html" or "git add ." to add all the files. The staging area in Git is like a prepping table where you organize and select specific changes (ingredients) before committing them to the project (cooking the final dish).</p>
-                            <p>Step 7: Make a local commit
-                            For example; git commit -m "Initial commit"
-                            This command creates a commit with a message describing the changes. It's like taking a snapshot of your project at this point.</p>
+                        </article>
 
-                            <p>Step 8: Check the commit history
-                            "git log".
-                            <p>Connect to a Remote Repository:
-                            Connecting your local repository to a remote repository is a crucial step, especially if you want to collaborate with others or backup your work on a remote server.</p>
-                            <p>1. Add a Remote Connection:
-                            To link your local project to an online repository, use; "git remote add origin repository-url" where "origin" is a common name, and replace repository-url with your online repository's URL.
-                            create repo in git hub.</p>
-                            <p>2. Push Changes to the Remote Repository:
-                            Once you've added the remote connection, you can push your local changes to the remote repository. The -u option sets up a tracking relationship, linking your local branch with the remote branch.
-                            "git push -u origin master". This command is assuming you're pushing changes from the master branch. 
-                            Example:
-                            git push -u origin main
-                            Now, your local changes are sent to the remote repository, and the two repositories are linked. You can subsequently use git pull to fetch changes from the remote repository or continue pushing changes with git push.
-                            </p>
-                    </div>
-                        <div class="grid-container__item">
-                            <h3 class="sub-header">why remote repositories are necessary</h3>
-                            <p>Remote repositories play a crucial role in the world of version control. In simple terms, a remote repository refers to the shared storage where developers can collaborate, store, and access their codebase. It serves as a central hub for a project, allowing team members to work together seamlessly.</p>
+                        <article>
+                            <div class="article__item">
+                                <h3 class="sub-header">Details the git commands to link the local and remote repos</h3>
+                                <p>Step 1: Create a new directory,
+                                "mkdir my-first-git-project". This command creates a new directory named my-first-git-project.</p>
+                                <p>Step 2: Navigate to the project directory "cd my-git-project". Changes into the newly created directory.</p>
+                                <p>Step 3: Initialize a Git repository, "git init". This command initializes a new Git repository in the current directory.</p>
+                                <p>Step 4: Create a new file, "touch (on mac)", "Echo (on windows)"" then file name; document.html. This creates a new file i.e document.html and add a simple message to it.</p>
+                                <p>Step 5: Check the status of your repository "git status". This command shows the current status of your repository. You should see document.html listed as an untracked file.</p>
+                                <p>Step 6: Add the file to the staging area. This command stages the file, preparing it for a commit, forexample; "git add document.html" or "git add ." to add all the files. The staging area in Git is like a prepping table where you organize and select specific changes (ingredients) before committing them to the project (cooking the final dish).</p>
+                                <p>Step 7: Make a local commit For example; git commit -m "Initial commit". This command creates a commit with a message describing the changes. It's like taking a snapshot of your project at this point.</p>
+                                <p>Step 8: Check the commit history
+                                    "git log".
+                                <p>Connect to a Remote Repository:
+                                   Connecting your local repository to a remote repository is a crucial step, especially if you want to collaborate with others or backup your work on a remote server.</p>
+                                <p>1. Add a Remote Connection:
+                                   To link your local project to an online repository, use; "git remote add origin repository-url" where "origin" is a common name, and replace repository-url with your online repository's URL.
+                                   create repo in git hub.</p>
+                                <p>2. Push Changes to the Remote Repository:
+                                   Once you've added the remote connection, you can push your local changes to the remote repository. The -u option sets up a tracking relationship, linking your local branch with the remote branch.
+                                   "git push -u origin master". This command is assuming you're pushing changes from the master branch. 
+                                   Example:
+                                   git push -u origin main
+                                   Now, your local changes are sent to the remote repository, and the two repositories are linked. You can subsequently use git pull to fetch changes from the remote repository or continue pushing changes with git push.
+                                </p>
+                            </div>
+                        </article>
 
-                            <P>When developers work on a project, they create a local repository on their own machines to track changes and history. However, this local repository has its limitations, as it can only be accessed by the developer who created it. This is where a remote repository comes into play.</P>
+                        <article>
+                            <div class="article__item">
+                                <h3 class="sub-header">why remote repositories are necessary</h3>
+                                <p>Remote repositories play a crucial role in the world of version control. In simple terms, a remote repository refers to the shared storage where developers can collaborate, store, and access their codebase. It serves as a central hub for a project, allowing team members to work together seamlessly.</p>
+
+                                <P>When developers work on a project, they create a local repository on their own machines to track changes and history. However, this local repository has its limitations, as it can only be accessed by the developer who created it. This is where a remote repository comes into play.</P>
                                 
-                            <p>A remote repository, as the name suggests, is a repository located on a centralized server or cloud-based platform. It serves as a common repository where multiple developers can store their changes and share their work with others. By committing their changes to the remote repository, developers make their code available to the entire team.</p>
+                                <p>A remote repository, as the name suggests, is a repository located on a centralized server or cloud-based platform. It serves as a common repository where multiple developers can store their changes and share their work with others. By committing their changes to the remote repository, developers make their code available to the entire team.</p>
                                 
-                            <p>The benefits of remote repositories are numerous. They facilitate seamless collaboration between team members, regardless of their physical location. Developers can push their changes to the remote repository, allowing others to pull those changes and work on them. This fosters an efficient and streamlined workflow within a development team.</p>
+                                <p>The benefits of remote repositories are numerous. They facilitate seamless collaboration between team members, regardless of their physical location. Developers can push their changes to the remote repository, allowing others to pull those changes and work on them. This fosters an efficient and streamlined workflow within a development team.</p>
                                 
-                            <p>Additionally, remote repositories provide a secure and reliable backup of the project's codebase. In the event of a local machine failure or data loss, developers can simply clone the remote repository to retrieve all the files and commit history. This ensures that no work is lost and allows teams to pick up where they left off without any setbacks.</p>
+                                <p>Additionally, remote repositories provide a secure and reliable backup of the project's codebase. In the event of a local machine failure or data loss, developers can simply clone the remote repository to retrieve all the files and commit history. This ensures that no work is lost and allows teams to pick up where they left off without any setbacks.</p>
                                 
-                            <p>Popular remote repository hosting services include GitHub, GitLab, and Bitbucket. These platforms offer additional features like issue tracking, pull requests, and code review, enhancing the collaboration and project management aspects.</p>
+                                <p>Popular remote repository hosting services include GitHub, GitLab, and Bitbucket. These platforms offer additional features like issue tracking, pull requests, and code review, enhancing the collaboration and project management aspects.</p>
                                 
-                            <h3 class="sub-header">The Importance of Assessing Remote Repositories Skills</h3>
+                                <h3 class="sub-header">The Importance of Assessing Remote Repositories Skills</h3>
                                 <p>Assessing a candidate's knowledge and experience with remote repositories is essential in today's collaborative work environment. Here's why it's important to evaluate this skill when hiring:
                                 
                                 Efficient Collaboration: With remote work becoming more common, the ability to effectively collaborate with team members is crucial. Assessing a candidate's proficiency in remote repositories ensures that they can navigate and contribute to shared codebases, allowing for seamless collaboration with remote colleagues.</p>
@@ -326,7 +323,9 @@
                                 
                                 <p>By assessing a candidate's knowledge and understanding of remote repositories, you can make informed hiring decisions, build a stronger team, and drive successful collaborative projects within your organization.</p>
                         </div>
-                        <div class="grid-container__item">
+                    </article>
+                    <article>
+                        <div class="article__item">
                             <h3 class="sub-header">Steps involved in creating a project on github (create an organization project or a user project.)</h3>
                                 <p>Creating an organization project
                                 In the upper-right corner of GitHub, select your profile photo, then click Your organizations.
@@ -378,7 +377,14 @@
                                 You can view and make quick changes to your project description and README by navigating to your project and clicking  in the top right.
                                 </p>
                         </div>
-                        <div class="grid-container__item">contribution of people to projects</div>
+                    </article>
+                    <article>
+                        <div class="article__item">
+                            <h3 class="sub-header">Contribution of people to projects</h3>
+                            <p>One way is to invite people to your github project. By going into your github page and locate your project you can add people to the project by clicking on the “Settings” button. Inside “Settings” you can find another button called “Collaborators” under the “Access”-header. On your right side you will have a green button called “Add People”. This button gives you the opportunity to add members by their GitHub-username or email. Once you have added a member to your project it will generate a collaborator-block under “Manage Access” with its state of invitation. At start it will have the “Pending invite” state so it’s up to the user to accept the invitation on his/her email and then locate the github page for cloning. Once it’s accepted it will turn off the pending state. This gives the user access to upstream/push without having to make “Pull Requests” to the owner of the repository. Another way is to fork/clone the repo and make “Pull Requests” and let the owner of the repo accept changes. Forks is a server-side copy and Clone is a local copy of the repository. Another way to think: You have access to the repository, use Clone. You don’t have: use Fork.
+                            </p>
+                        </div>
+                    </article>
                
             </div>
             </section>
