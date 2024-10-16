@@ -27,8 +27,9 @@ body {
 .home{
     display:flex;
     flex-direction:column;
-    min-height:100vh;
+    min-height:100%;
 }
+
 
 h3{
     font-size: 1.5rem;
@@ -57,29 +58,6 @@ li::before{
     content: url(../images/social.png);
 }
 
-.terminologies{
-    position:relative;
-}
-
-.term{
-    font-size: 1.3rem;
-    font-weight:bold;
-    padding: var(--content-padding);
-    width:20%;
-}
-
-.definition{
-    font-size: 1.25rem;
-    display:none;
-    background-color:  var(--grey-dark-2);
-    width:50%;
-}
-
-.term:hover + span{
-    display:block;
-    transform:scaleX(1);
-    cursor:pointer;
-}
 
 .flowchart_head{
     align-self: center;
@@ -90,4 +68,50 @@ li::before{
     width:50%;
     align-self: center;
     border: 2px solid black;
+}
+
+
+.term{
+    font-size: 1.3rem;
+    font-weight:bold;
+    padding: var(--content-padding);
+    width:100%;
+    text-align:center;
+    z-index:20;
+}
+
+.definition{
+    font-size: 1.25rem;
+    display:block;
+    width:100%;
+    z-index: -10;
+    font-weight: bold;
+}
+
+.grid_box{
+    border: 2px solid #777;
+    padding: var(--content-padding);
+}
+
+.grid_box:hover{
+    transform: perspective(1000px) scaleZ(6) rotateZ(40deg); 
+    width: 75%;
+    font-size: 1.5rem;
+    background-color: beige;
+    z-index:100;
+}
+
+
+.terminologies{
+    display:grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+    gap:8px;
+    padding:var(--content-padding);
+}
+
+.workflow{
+    display:grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+    gap:8px;
+    padding:var(--content-padding);
 }

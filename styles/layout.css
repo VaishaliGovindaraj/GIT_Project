@@ -37,13 +37,11 @@
 .main-content {
     flex-grow: 1;
     background-color: var(--color-primary-dark);
-    padding: 16px;
 }
 
 .home {
     color: var(--black);
     background-color: var(--color-primary-light);
-    height: 100rem;
     padding: 0px;
 }
 
