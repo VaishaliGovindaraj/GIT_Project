@@ -1,0 +1,102 @@
+* .change-page{
+    color: black;
+    background-color: var(--color-primary-light);
+}
+
+.change-page {
+    margin: 0;
+    padding: 8px;
+    min-height: 100vh;
+    border: 10px solid var(--color-primary-dark);
+}
+
+
+.change-page_title {
+    text-align: center;
+    color: black;
+    margin: 8px;
+    padding: 8px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.change-page_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.change-page_content p {
+    font-size: 1.4rem;
+    color: black;
+    padding: 8px;
+}
+
+.steps_content h4{
+    font-size: 1.8rem;
+    font-style: italic;
+    width: fit-content;
+}
+
+.git_command {
+    margin: 16px;
+    padding: 16px;
+    font-size: 1.4rem;
+    display: flex;
+    height: 300px;
+   justify-content: center;
+ 
+}
+
+.command {
+    border-radius: 10px;
+    margin: 8px;
+    width: 200px;
+    box-shadow: 2px 2px 2px;
+    position: relative;
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.command h5 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.6rem;
+    padding: 8px;
+}
+
+.command_explanation {
+    width: 200px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(27, 27, 27,.5);
+    opacity: 1;
+    transition: .5s;
+}
+
+.command_explanation p{
+    visibility: hidden;
+    opacity: 0;
+    color: beige;
+}
+
+.command:hover {
+    cursor: pointer;
+}
+
+.command:hover .command_explanation {
+    height: 220px;
+    bottom: 10px;
+    background-color: black;
+}
+
+.command:hover .command_explanation p{
+    visibility: visible;
+    opacity: 1;
+    color: beige;
+}
+
+.command:hover h5 {
+    transform: scale(1.1) rotate(-3deg);
+}

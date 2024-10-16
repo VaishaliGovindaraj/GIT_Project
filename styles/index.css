@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     padding: 0;
@@ -24,4 +22,100 @@ body {
     background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.home{
+    display:flex;
+    flex-direction:column;
+    min-height:100%;
+}
+
+
+.header_main{
+    font-size: 1.5rem;
+    padding: var(--content-padding);
+    font-weight:bolder;
+}
+
+.header_line{
+    font-size: 1.25rem;
+    font-weight:bolder;
+    padding-left: 8px;
+}
+
+.section_headers{
+    font-size: 1.35rem;
+    font-weight:bold;
+    padding: var(--content-padding);
+}
+
+.about-git-content {
+    font-size: 1.25rem;
+    padding: var(--content-padding);
+}
+
+.git_explain_list{
+    display:block;
+    margin-left: 50px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.git_explain_list::before{
+    content: url(../images/social.png);
+}
+
+.flowchart_head{
+    align-self: center;
+}
+
+.image{
+    height:auto;
+    width:50%;
+    align-self: center;
+    border: 2px solid black;
+}
+
+.term{
+    font-size: 1.3rem;
+    font-weight:bold;
+    padding: var(--content-padding);
+    width:100%;
+    text-align:center;
+    z-index:20;
+}
+
+.definition{
+    font-size: 1.25rem;
+    display:block;
+    width:100%;
+    z-index: -10;
+    font-weight: bold;
+}
+
+.grid_box{
+    border: 2px solid #777;
+    padding: var(--content-padding);
+}
+
+.grid_box:hover{
+    transform: perspective(1000px) scaleZ(6) rotateZ(40deg); 
+    width: 75%;
+    font-size: 1.5rem;
+    background-color: beige;
+    z-index:100;
+}
+
+.terminologies{
+    display:grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+    gap:8px;
+    padding:var(--content-padding);
+}
+
+.workflow{
+    display:grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+    gap:8px;
+    padding:var(--content-padding);
 }
