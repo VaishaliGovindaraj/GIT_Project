@@ -48,13 +48,13 @@ h3{
     padding: var(--content-padding);
 }
 
-li{
+.git_explain_list{
     display:block;
     margin-left: 50px;
     font-size: 1.25rem;
 }
 
-li::before{
+.git_explain_list::before{
     content: url(../images/social.png);
 }
 
