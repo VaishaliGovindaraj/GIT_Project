@@ -1,0 +1,155 @@
+.card {
+    perspective: 150rem;
+    height: 50rem;
+    max-width: 30rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen and (min-width:800){
+    
+    }
+
+}
+
+.card__side {
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem #00000033;
+    height: 50rem;
+    transition: all .2s ease;
+    min-width: 30rem;
+    backface-visibility: hidden;
+    overflow: hidden;
+    position: absolute;
+}
+
+.card__side--front {
+    background-color: #fff;
+}
+
+.card__side--back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card__side--front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+    transform: rotateY(0);
+}
+
+.card--india {
+    background-image: linear-gradient(to bottom, #ffb900, #fff, #008000);
+}
+
+.card--uganda {
+    background-image: linear-gradient(to bottom, #000000, #ffff00, #ff0000);
+}
+
+.card--sweden {
+    background-image: linear-gradient(to bottom, #0000ff, #ffff00);
+}
+
+.card__flag--india {
+    margin-top: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/india-flag.png");
+}
+
+.card__flag--uganda {
+    margin-top: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/uganda-flag.png");
+}
+
+.card__flag--sweden {
+    margin-top: 50%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../img/swedish-flag.png");
+}
+
+/* Front styling */
+
+.card__picture {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    height: 23rem;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+.card__picture--india-1 {
+    background-image: linear-gradient(to right, var(--color-india-light), var(--color-india-dark)), url("../img/Taj-Mahal.jpg");
+}
+
+.card__picture--india-2 {
+    background-image: linear-gradient(to right, var(--color-india-light), var(--color-india-dark)), url("../img/Golden-Temple.jpg");
+}
+
+.card__picture--india-3 {
+    background-image: linear-gradient(to right, var(--color-india-light), var(--color-india-dark)), url("../img/albert-museum.jpg");
+}
+
+.card__picture--uganda {
+    background-image: linear-gradient(to right bottom, #000000, #ffff00, #ff0000), url("../img/uganda-waterfall-new.jpg");
+}
+
+.card__picture--sweden {
+    background-image: linear-gradient(to right bottom, #0000ff, #ffff00), url("../img/stockholm.jpg");
+}
+
+.card__heading {
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-align: right;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    width: 60%;
+}
+
+.card__heading-span {
+    padding: 1rem 1.5rem;
+}
+
+.card__heading-span--india {
+    background-image: linear-gradient(to right bottom, var(--color-india-light), var(--color-india-dark));
+}
+
+.card__heading-span--uganda {
+    -webkit-text-stroke: .5px #333;
+    background-image: linear-gradient(to bottom, #000000, #ffff00, #ff0000);
+}
+
+.card__heading-span--sweden {
+    background-image: linear-gradient(to right bottom, #0000ff, #ffff00);
+}
+
+.card__details {
+    ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+        padding: 3rem;
+
+        li {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #eee;
+
+            }
+        }
+    }
+}

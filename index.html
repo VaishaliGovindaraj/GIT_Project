@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +27,7 @@
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-home"></use>
                             </svg>
-                            <span> Page 1</span>
+                            <span> Home</span>
                         </a>
                     </li>
                     <li class="side-nav__item">
@@ -34,7 +35,7 @@
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
                             </svg>
-                            <span>Page 2</span>
+                            <span>Project</span>
                         </a>
                     </li>
                     <li class="side-nav__item">
@@ -42,7 +43,7 @@
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-key"></use>
                             </svg>
-                            <span>Page 3</span>
+                            <span>Changes</span>
                         </a>
                     </li>
                     <li class="side-nav__item">
@@ -50,7 +51,7 @@
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-map"></use>
                             </svg>
-                            <span>Page 4</span>
+                            <span>Branch</span>
                         </a>
                     </li>
                     <li class="side-nav__item">
@@ -58,7 +59,7 @@
                             <svg class="side-nav__icon">
                                 <use xlink:href="img/sprite.svg#icon-map"></use>
                             </svg>
-                            <span>Page 5</span>
+                            <span>About-Us</span>
                         </a>
                     </li>
                 </ul>
@@ -67,11 +68,95 @@
                 </div>
             </div>
             <div class="main-content">
-                <!--Here we will put our content, erase the filler class and div-->
-                <div class="filler">
-                  
+                <div class="home">
+                    <section class="about-git">
+                        <h3 class="header_main">About GIT</h3>
+                        <p class="section_headers">What is GIT?</h5>
+                        <p class="about-git-content">
+                            <p class="header_line"> Git is a version control system used to track changes in code, collaborate with other team members, and manage different versions of a project. With Git, you can: </p>
+                                <ul class="git_explain">
+                                    <li class="git_explain_list"> Track and save changes in your project.</li>
+                                    <li class="git_explain_list"> Undo mistakes by reverting to previous versions.</li>
+                                    <li class="git_explain_list"> Collaborate with others without overwriting each other’s work.</li>
+                                </ul>
+                        </p>
+                    </section>
+
+                    <h3 class="flowchart_head">GIT WorkFlow</h3>
+                    <img src="./images/flow_chart.png" alt="git_flowchart" class="image">
+
+                    <h3 class="header_main">Basic Git terminologies</h3>
+                    <section class="terminologies">
+                        <div class="grid_box">
+                            <p class="term"> Working Directory </p>
+                            <span class="definition"> The actual directory where project files are located. Modifications made to files in the working directory are considered 'untracked' until explicitly staged for commit.</span>
+                        </div>  
+
+                        <div class="grid_box">
+                            <p class="term"> Repository (Repo) </p>
+                            <span class="definition"> A project folder tracked by Git. It contains all your files and their history. </span>
+                        </div>
+
+                        <div class="grid_box">
+                            <p class="term"> Staging Area</p>
+                            <span class="definition"> A space where changes are gathered before committing them. </span>
+                        </div>
+
+                        <div class="grid_box">  
+                            <p class="term"> Commit </p>
+                            <span class="definition"> A saved snapshot of your project at a specific point.</span>
+                        </div>
+
+                        <div class="grid_box">
+                            <p class="term"> Branch</p>
+                            <span class="definition"> A parallel version of your project to develop features or fix bugs.</span>
+                        </div>
+
+                        <div class="grid_box">
+                            <p class="term"> Remote Repository</p>
+                            <span class="definition"> A version of your repo stored on the internet (e.g., GitHub).</span>
+                        </div>
+
+                        <div class="grid_box">
+                            <p class="term"> Pull / Push</p>
+                            <span class="definition"> Sync changes between your local repo and the remote repo. </span>
+                        </div>
+                        </section>
+
+                    <h3 class="header_main">Git Workflow Steps</h3>
+
+                    <section class="workflow">
+                            <div class="grid_box">
+                                <p class="term"> Clone/Init Repository </p>
+                                <span class="definition"> Create a local copy of an existing repo (clone) or start a new one (init).</span>
+                             </div>
+                            
+                            <div class="grid_box">
+                                <p class="term"> Make Changes</p>
+                                <span class="definition">Edit code files or add new files.</span>
+                            </div>
+
+                            <div class="grid_box">
+                                <p class="term"> Stage Changes</p>
+                                <span class="definition"> Move the changes you want to commit to the staging area.</span>
+                            </div>
+
+                            <div class="grid_box">
+                                <p class="term"> Commit Changes </p>
+                                <span class="definition"> Save the staged changes with a meaningful commit message./span>
+                            </div>
+
+                            <div class="grid_box">
+                                <p class="term"> Push to Remote Repo </p>
+                                <span class="definition"> Upload your local changes to a remote repository (e.g., GitHub).</span>
+                            </div>
+
+                            <div class="grid_box">
+                                <p class="term">Pull Updates</p>
+                                <span class="definition">Download changes from the remote repo if others have made updates</span>
+                            </div>
+                        </section>        
                 </div>
-                <!--Ends here-->
             </div>
         </div>
     </div>

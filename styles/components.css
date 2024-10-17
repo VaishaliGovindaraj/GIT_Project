@@ -104,10 +104,13 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--grey-light-4);
+<<<<<<< HEAD
 
     @media screen and (max-width: 768px) {
         display: none;
     }
+=======
+>>>>>>> main
 }
 
 .about-us__intro {
