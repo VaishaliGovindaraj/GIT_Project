@@ -62,7 +62,7 @@ body {
 }
 
 .git_explain_list::before{
-    content: url(../images/social.png);
+    content: url(../img/social.png);
 }
 
 .flowchart_head{
@@ -96,14 +96,24 @@ body {
 .grid_box{
     border: 2px solid #777;
     padding: var(--content-padding);
+    height:100%;
 }
 
-.grid_box:hover{
+/* .grid_box:hover{
     transform: perspective(1000px) scaleZ(6) rotateZ(40deg); 
     width: 75%;
     font-size: 1.5rem;
     background-color: beige;
     z-index:100;
+} */
+
+.grid_box_parent:hover .grid_box{
+    transform: perspective(1000px) scaleZ(6) rotateZ(40deg); 
+    width: 75%;
+    font-size: 1.5rem;
+    background-color: beige;
+    z-index:100;
+
 }
 
 .terminologies{
@@ -118,4 +128,13 @@ body {
     grid-template: repeat(3,1fr) / repeat(3,1fr);
     gap:8px;
     padding:var(--content-padding);
+}
+
+
+@media screen and (min-width:768px){
+    *{
+        font-size: 2.5rem;
+    }
+
+    
 }
