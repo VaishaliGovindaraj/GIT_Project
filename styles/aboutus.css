@@ -1,0 +1,19 @@
+.about-us__intro {
+    padding: 4rem;
+    background-image: linear-gradient(to left bottom, #f5f5dc, #ececec);
+    border-bottom: 1px var(--grey-light-4) solid;
+    font-size: 1.6rem;
+}
+
+.about-us__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    background-image: linear-gradient(to right bottom, #ececec, #f5f5dc);
+}
+
+.grid__item {
+    width: 100%;
+}
