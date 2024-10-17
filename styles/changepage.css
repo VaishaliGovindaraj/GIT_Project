@@ -10,12 +10,12 @@
     border: 10px solid var(--color-primary-dark);
 }
 
-
 .change-page_title {
-    text-align: center;
-    color: black;
     margin: 8px;
     padding: 8px;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
     text-transform: uppercase;
     text-decoration: underline;
 }
@@ -32,6 +32,10 @@
     padding: 8px;
 }
 
+.steps_content p {
+    font-size: 1.4rem;
+}
+
 .steps_content h4{
     font-size: 1.8rem;
     font-style: italic;
@@ -45,7 +49,6 @@
     display: flex;
     height: 300px;
    justify-content: center;
- 
 }
 
 .command {
@@ -99,4 +102,56 @@
 
 .command:hover h5 {
     transform: scale(1.1) rotate(-3deg);
+}
+
+@media screen and (max-width: 768px) {
+    .change-page_title {
+        font-size: 1.4rem;
+    }
+
+    .steps_content p {
+        font-size: 1.4rem;
+    }
+
+    .command {
+        border-radius: 10px;
+        margin: 8px;
+        width: 200px;
+        box-shadow: 2px 2px 2px;
+        position: relative;
+        background-color: lightgray;
+        overflow: visible;
+    }
+
+    .command_explanation {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        bottom: 2px;
+        background: black;
+        opacity: 1;
+        transition: none;
+    }
+
+    .command_explanation p{
+        visibility: visible;
+        color: beige;
+        opacity: 1;
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .command:hover .command_explanation {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        bottom: 2px;
+        background: black;
+        opacity: 1;
+        transition: none;
+    }
+
+    .command:hover h5 {
+        transform: none;
+    }
 }
