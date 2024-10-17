@@ -1,0 +1,85 @@
+.main-content {
+    min-height: 100vh;
+    font-size: 2rem;
+}
+ 
+* .branch-page-content{
+    color: black;
+}
+ 
+ 
+.branch-page {
+    margin: 0;
+    padding: 8px;
+    border: 10px solid var(--color-primary-dark);
+    background-color: var(--color-primary-light);
+}
+ 
+ 
+.branch-page-title {
+    text-align: center;
+    color: black;
+    margin: 8px;
+    padding: 8px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.introduction h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.introduction img{
+    display: flex;
+    padding-left: 300px;
+}
+ 
+.intro-points {
+    margin: 8px;
+ 
+    padding: 8px;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+ 
+.intro-points img {
+    margin: 16px;
+    padding: 16px;
+    justify-content: center;
+}
+ 
+.branch-explanation h5{
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 3px;
+}
+ 
+.branch-explanation p {
+    font-size: 1.5rem;
+}
+ 
+.branch-command {
+    display: grid;
+    grid-template: repeat(8,70px) / 30% 70%;
+    gap: 8px;
+}
+ 
+.branch-command-syntax {
+    background-color: var(--color-primary);
+    margin: 0px;
+    padding: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+}
+ 
+.branch-command-explanation {
+    background-color: var(--color-primary-dark);
+    margin: 0px;
+    padding: 8px;
+    font-size: 1.5rem;
+}
+ 
+ 
+ 
+ 

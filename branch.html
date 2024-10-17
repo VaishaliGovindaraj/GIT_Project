@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT Assignment</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/branch.css">
+</head>
+ 
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header__page-title">
+                Git Project Site
+            </h1>
+        </header>
+        <div class="content">
+            <div class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span> Home</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span> project</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>changes</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link side-nav__link--active">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>branches</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>About us</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    &copy; 2024 by Git-Project
+                </div>
+            </div>
+            <div class="main-content">
+                <!--Here we will put our content, erase the filler class and div-->
+                <div class="branch-page">
+                    <div class="branch-page-content">
+                        <h2 class="branch-page-title">Branching techniques</h2>
+                        <div class="introduction">
+                            <h5>Branching</h5>
+                            <ul class="intro-points">
+                                <li>A branch in Git is a way to keep developing and coding a new feature or
+                                    modification to the software and still not affecting the main part of the project.
+                                </li>
+                                <li>The primary or default branch in Git is the master or main branch </li>
+                                <li>Developers can easily pull changes from different branches and also merge their code with
+                                    the main branch. This allows easier collaboration for developers working on one codebase.
+                                </li>
+                            </ul>
+                            <img src="./image_ranjitha/git_branch_merge.png" alt="Git-branch" width="70%" height="auto">
+                        </div>
+ 
+                        <div class="branch-explanation">
+                            <h5>Why branching is needed</h5>
+                            <p>Branching  is a strategy that teams adopt for writing, merging and deploying code .
+                                Branching are essential as they help in keeping project repositories organized,
+                                error free and avoid the dreaded merge conflicts when multiple developers simultaneously push and pull code from the same repository.
+                            </p>
+                        </div>
+ 
+                        <div class="branch-command">
+                            <div class="branch-command-syntax">git checkout -b branchname</div>
+                            <div class="branch-command-explanation">Creates and switches to new branch</div>
+                            <div class="branch-command-syntax">git branch branchname</div>
+                            <div class="branch-command-explanation">Creates new branch with specified branch name but not navigate to created branch</div>
+                            <div class="branch-command-syntax">git checkout baranchname</div>
+                            <div class="branch-command-explanation">Switch to the specified branch</div>
+                            <div class="branch-command-syntax">git branch</div>
+                            <div class="branch-command-explanation">Display all the branch in your local repository</div>
+                            <div class="branch-command-syntax">git branch -a</div>
+                            <div class="branch-command-explanation">Display all the branch in the remote repository</div>
+                            <div class="branch-command-syntax">git branch -d <branch-to-delete></div>
+                            <div class="branch-command-explanation">Delete the corresponding branch</div>
+                            <div class="branch-command-syntax">git pull origin main</div>
+                            <div class="branch-command-explanation">This command fetches the latest changes from the main branch of the origin remote and merges them into your local branch</div>
+                            <div class="branch-command-syntax">git merge main</div>
+                            <div class="branch-command-explanation">Merge the main branch into your current branch. Resolve any conflicts (if necessary) and stage them.</div>
+                            <div class="branch-command-syntax">git merge -- abort</div>
+                            <div class="branch-command-explanation">Exit from the merge process and return the branch to the state before the merge began.</div>
+                        </div>
+ 
+ 
+                    </div>
+                </div>
+                <!--Ends here-->
+            </div>
+        </div>
+    </div>
+</body>
+ 
+</html>
