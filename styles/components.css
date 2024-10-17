@@ -78,6 +78,8 @@
 
         @media screen and (max-width: 768px) {
             padding: 1.5rem 0;
+            flex-direction: column;
+            font-size: 1rem;
         }
     }
 
@@ -97,6 +99,10 @@
     height: 2.75rem;
     margin-right: 2rem;
     fill: #fff;
+
+    @media screen and (max-width: 768px) {
+       margin-right: 0;
+    }
 }
 
 .legal {
