@@ -41,15 +41,15 @@
 }
 
 .card--india {
-    background-image: linear-gradient(to bottom, #ffb900, #fff, green);
+    background-image: linear-gradient(to bottom, #ffb900, #fff, #008000);
 }
 
 .card--uganda {
-    background-image: linear-gradient(to bottom, black, yellow, red);
+    background-image: linear-gradient(to bottom, #000000, #ffff00, #ff0000);
 }
 
 .card--sweden {
-    background-image: linear-gradient(to bottom, blue, yellow);
+    background-image: linear-gradient(to bottom, #0000ff, #ffff00);
 }
 
 .card__flag--india {
@@ -98,11 +98,11 @@
 }
 
 .card__picture--uganda {
-    background-image: linear-gradient(to right bottom, black, yellow, red), url("../img/uganda-waterfall-new.jpg");
+    background-image: linear-gradient(to right bottom, #000000, #ffff00, #ff0000), url("../img/uganda-waterfall-new.jpg");
 }
 
 .card__picture--sweden {
-    background-image: linear-gradient(to right bottom, blue, yellow), url("../img/stockholm.jpg");
+    background-image: linear-gradient(to right bottom, #0000ff, #ffff00), url("../img/stockholm.jpg");
 }
 
 .card__heading {
@@ -127,11 +127,11 @@
 
 .card__heading-span--uganda {
     -webkit-text-stroke: .5px #333;
-    background-image: linear-gradient(to bottom, black, yellow, red);
+    background-image: linear-gradient(to bottom, #000000, #ffff00, #ff0000);
 }
 
 .card__heading-span--sweden {
-    background-image: linear-gradient(to right bottom, Blue, yellow);
+    background-image: linear-gradient(to right bottom, #0000ff, #ffff00);
 }
 
 .card__details {
