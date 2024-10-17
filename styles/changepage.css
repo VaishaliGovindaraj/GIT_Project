@@ -155,3 +155,39 @@
         transform: none;
     }
 }
+
+@media screen and (max-width:530px) {
+    .change-page_title {
+        font-size: 1rem;
+    }
+    
+    .git_command {
+        display: grid;
+        grid-template: repeat(2, 1fr) / 1fr 2fr;
+        height: 250px;
+        justify-content: center;
+    }
+
+    .command {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin: 8px;
+        width: 200px;
+        box-shadow: none;
+        position: relative;
+        background-color: lightgray;
+        overflow: visible;
+    }
+
+    .command_explanation {
+        width: 200px;
+        height: 150px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        position: absolute;
+        top: 60px;
+        background: black;
+        opacity: 1;
+        transition: none;
+    }
+} 
