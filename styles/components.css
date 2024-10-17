@@ -2,6 +2,11 @@
     font-size: 1.4rem;
     list-style: none;
     margin-top: 3.5rem;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        margin: 0;
+    }
 }
 
 .side-nav__item {
@@ -9,6 +14,15 @@
 
     &:not(:last-child) {
         margin-bottom: .5rem;
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 0;
+            flex: 1;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        flex: 1;
     }
 }
 
@@ -61,6 +75,12 @@
         z-index: 1;
         position: relative;
         transition: none;
+
+        @media screen and (max-width: 768px) {
+            padding: 1.5rem 0;
+            flex-direction: column;
+            font-size: 1rem;
+        }
     }
 
     &:hover {
@@ -79,6 +99,10 @@
     height: 2.75rem;
     margin-right: 2rem;
     fill: #fff;
+
+    @media screen and (max-width: 768px) {
+       margin-right: 0;
+    }
 }
 
 .legal {
@@ -86,24 +110,9 @@
     text-align: center;
     padding: 2.5rem;
     color: var(--grey-light-4);
-}
 
-.about-us__intro {
-    padding: 4rem;
-    background-image: linear-gradient(to left bottom, #f5f5dc, #ececec);
-    border-bottom: 1px var(--grey-light-4) solid;
-    font-size: 1.6rem;
-}
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 
-.about-us__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem 0;
-    background-image: linear-gradient(to right bottom, #ececec, #f5f5dc);
-}
-
-.grid__item {
-    width: 100%;
 }
