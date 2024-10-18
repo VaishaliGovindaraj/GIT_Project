@@ -62,7 +62,7 @@ body {
 }
 
 .git_explain_list::before{
-    content: url(../images/social.png);
+    content: url(../img/social.png);
 }
 
 .flowchart_head{
@@ -71,7 +71,7 @@ body {
 
 .image{
     height:auto;
-    width:50%;
+    width:80%;
     align-self: center;
     border: 2px solid black;
 }
@@ -96,10 +96,11 @@ body {
 .grid_box{
     border: 2px solid #777;
     padding: var(--content-padding);
+    height:100%;
 }
 
-.grid_box:hover{
-    transform: perspective(1000px) scaleZ(6) rotateZ(40deg); 
+.grid_box_parent:hover .grid_box{
+    transform: skew(10,30);
     width: 75%;
     font-size: 1.5rem;
     background-color: beige;
@@ -107,15 +108,45 @@ body {
 }
 
 .terminologies{
-    display:grid;
-    grid-template: repeat(3,1fr) / repeat(3,1fr);
-    gap:8px;
+    display:flex;
+    flex-direction: column;
     padding:var(--content-padding);
 }
 
 .workflow{
-    display:grid;
-    grid-template: repeat(3,1fr) / repeat(3,1fr);
-    gap:8px;
+    display:flex;
+    flex-direction: column;
     padding:var(--content-padding);
+}
+
+@media screen and (min-width:768px){
+    
+    .grid_box{
+        border: 2px solid #777;
+        padding: var(--content-padding);
+        height:100%;
+    }
+    
+    .grid_box_parent:hover .grid_box{
+        transform: perspective(1000px) scaleZ(6) rotateZ(40deg); 
+        width: 75%;
+        font-size: 1.5rem;
+        background-color: beige;
+        z-index:100;
+    
+    }
+    
+    .terminologies{
+        display:grid;
+        grid-template: repeat(3,1fr) / repeat(3,1fr);
+        gap:8px;
+        padding:var(--content-padding);
+    }
+    
+    .workflow{
+        display:grid;
+        grid-template: repeat(3,1fr) / repeat(3,1fr);
+        gap:8px;
+        padding:var(--content-padding);
+    }
 }

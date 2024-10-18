@@ -1,16 +1,8 @@
 .card {
     perspective: 150rem;
     height: 50rem;
-    max-width: 30rem;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @media screen and (min-width:800){
-    
-    }
-
+    width: 30rem;
+    margin: 0 auto;
 }
 
 .card__side {
@@ -51,28 +43,21 @@
 .card--sweden {
     background-image: linear-gradient(to bottom, #0000ff, #ffff00);
 }
-
-.card__flag--india {
+.card__flag {
     margin-top: 50%;
     height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.card__flag--india {
     background-image: url("../img/india-flag.png");
 }
 
 .card__flag--uganda {
-    margin-top: 50%;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
     background-image: url("../img/uganda-flag.png");
 }
 
 .card__flag--sweden {
-    margin-top: 50%;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
     background-image: url("../img/swedish-flag.png");
 }
 
@@ -150,6 +135,48 @@
                 border-bottom: 1px solid #eee;
 
             }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        height: auto;
+        border-radius: .3rem;
+        background-color: #fff;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.199);
+
+        .card__details {
+            padding: 0 1rem;
+        }
+
+        .card__side {
+            height: auto;
+            position: relative;
+            box-shadow: none;
+        }
+
+        .card__side--back {
+            transform: rotateY(0deg);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+            height: 15rem;
+        }
+
+        &:hover .card__side--front {
+            transform: rotateY(0deg);
+        }
+
+        &:hover .card__side--back {
+            transform: rotateY(0);
+        }
+
+        .card__flag {
+            position: relative;
+            top:60%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            width: 50%;
+            margin-top: 0;
         }
     }
 }
